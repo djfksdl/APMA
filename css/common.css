@@ -34,7 +34,10 @@
     src: url(../fonts/NanumSquare_acL.ttf);
     font-weight: 300;
 }
-
+@font-face {
+    font-family: "recipe_kr";
+    src: url(../fonts/Recipekorea\ 레코체\ FONT.ttf);
+}
 *{
     margin: 0;
     padding: 0;
@@ -79,6 +82,7 @@ header .inner > h1>a{
 header .inner nav{}
 header .inner nav ul{
     display: flex;
+    gap: 5%;
 }
 header .inner nav ul li{
     padding-left: 20px;
@@ -107,7 +111,7 @@ footer .top-txt{
 }
 /* 왼쪽 부분 */
 footer .top-txt .t-l{
-    background-color: darkblue;
+    /* background-color: darkblue; */
     width: 50%;
 }
 footer .top-txt .t-l p{
@@ -118,19 +122,23 @@ footer .top-txt .t-r{
     display: flex;
     justify-content: space-between;
     width: 30%;
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
 }
 footer .top-txt .t-r .time{
 
 }
-footer .top-txt .t-r .time h2{}
+footer .top-txt .t-r .time h2{
+    margin-bottom: 3%;
+}
 footer .top-txt .t-r .time p{
     white-space: nowrap;
 }
 footer .top-txt .t-r .break{
     /* padding-left: 5%; */
 }
-footer .top-txt .t-r .break h2{}
+footer .top-txt .t-r .break h2{
+    margin-bottom: 3%;
+}
 footer .top-txt .t-r .break p{
     white-space: nowrap;
 }
@@ -139,7 +147,7 @@ footer .top-txt .t-r .break p{
 footer .bottom-txt{
     margin-top: 2%;
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
 }
 /* 왼쪽 부분 */
 footer .bottom-txt .b-l{}
